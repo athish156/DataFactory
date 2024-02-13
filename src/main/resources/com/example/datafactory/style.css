@@ -1,0 +1,92 @@
+/* Apply styles to the VBox */
+VBox {
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 20;
+}
+
+/* Apply styles to the TextField */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-prompt-text-fill: #a0a0a0;
+    -fx-text-fill: #333333;
+    -fx-padding: 8px;
+    -fx-font-size: 14px;
+}
+
+/* Add a subtle hover effect for the TextField */
+.text-field:hover {
+    -fx-background-color: #f5f5f5;
+}
+
+/* Apply styles to the Button */
+.button {
+    -fx-background-color: #0073e6;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #0073e6;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 8px 12px;
+}
+
+/* Hover effect for the button */
+.button:hover {
+    -fx-background-color: #005bb5;
+}
+
+/* Apply styles to the TableView */
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+/* Apply styles to the TableColumn headers */
+.table-view .column-header-background {
+    -fx-background-color: #1dbbdd;
+    -fx-background-radius: 7px 7px 0px 0px;
+    -fx-background-insets: 0 11px 0 0;
+    -fx-padding: 0 0 5px 0;
+}
+
+/* Apply styles to the TableView cells */
+.table-view .table-cell {
+    -fx-border-color: transparent;
+    -fx-padding: 10px;
+}
+
+/* Style for the CTA button with black border and white text */
+.cta-button {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-border-color: #000000;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px 10px;
+}
+
+/* Hover effect for the CTA button */
+.cta-button:hover {
+    -fx-background-color: #e0e0e0;
+    -fx-border-color: #e0e0e0;
+    -fx-text-fill: #000000;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+    /* Add specific styles for small screens */
+    .hbox-buttons {
+        -fx-spacing: 5;
+    }
+
+    .button {
+        -fx-padding: 6px 8px;
+    }
+
+    .cta-button {
+        -fx-padding: 4px 8px;
+    }
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.datafactory.HelloController"
+      stylesheets="@style.css">
+
+    <Label text="DASHBOARD" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+    <TextField fx:id="searchField" promptText="Search..."/>
+
+    <HBox spacing="10">
+        <Button fx:id="browseButton" text="Browse" styleClass="ghost-button" onAction="#handleBrowseButtonAction"/>
+        <Button fx:id="sendButton" text="Send" styleClass="ghost-button" />
+    </HBox>
+
+    <TableView fx:id="tableView">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID"/>
+            <TableColumn fx:id="precipitationColumn" text="DataPrecipitation"/>
+            <TableColumn fx:id="stationCityColumn" text="StationCity"/>
+            <TableColumn fx:id="stationCodeColumn" text="StationCode"/>
+            <TableColumn fx:id="stationLocationColumn" text="StationLocation"/>
+            <TableColumn fx:id="stationStateColumn" text="StationState"/>
+            <TableColumn fx:id="avgTemperatureColumn" text="DataTemperature"/>
+            <TableColumn fx:id="windSpeedColumn" text="DataWindSpeed"/>
+
+        </columns>
+    </TableView>
+
+    <HBox spacing="10">
+        <Button fx:id="clearTableButton" text="Clear Table" styleClass="cta-button clear-table-button"/>
+        <Button fx:id="clearLabelButton" text="Clear Labels" styleClass="cta-button clear-table-button"/>
+    </HBox>
+
+    <Label fx:id="tableLabel" style="-fx-font-size: 14px;"/>
+
+</VBox>
